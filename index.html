@@ -4,45 +4,50 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			#wrap {display: flex; flex-direction:  column; align-items: flex-end; width: 1024px; height: 800px; background-color: blue; margin: 0 auto;}
-			#lsm {width: 100%; height: 100px; background-color: yellow; flex-direction: row; align-items: flex-end;}
-			#logo {width: 20%; height: 100px; background-color: red;}
-			#search {position:  relative; top: -100px; left: 200px; width: 60%; height: 100px; background-color: pink;}
-			#menu {position:  relative; width: 20%; height: 100px; top: -200px; left: 816px; background-color: saddlebrown; float: left;}
-			.clear {clear: both;}
-			#picture1 {width: 50%; height: 700px; background-color: tomato;}
-			#picture234 {width: 50%; height: 750px; background-color: green;}
-			#picture2 {width: 100%; height: 150px; backgroun200color: darkkhaki;}					
+			body {background: linear-gradient(70deg, blue, pink);}
+			img {width: 500px; height: 500px; object-fit: cover;}
+			button {background-color: lightgreen; border: none; color: blue; padding: 10px; text-align: center; text-decoration: none; display: inline-block; font-size: 10px; margin: 4px 2px; border-radius: 80%;}
+			hr {border: 5px solid lightyellow;}
+			h1 {font-size: 50px;}
+			#wrap {width: 1024px; height: 1024; background-color: white; margin: 0auto; margin-left: 120px; 
+				box-shadow: 8px 8px 20px 20px yellow;}
+			#header {margin: 0 auto; text-align: center; margin-top: 10%; padding-top: 3%; padding-bottom: 3%; font-weight: 100;}
+			#container {background-color: white; font-size: 14.5px; word-spacing: break-all; line-height: 37px; letter-spacing: 3px;}
+			.script {width: 40%; height: 100%; float: right; padding-right: 5%;}
+			.picture {width: 50%; height: 100%; float: left; padding-top: 30px;}
+
+			.change {animation: change 1s ease-in-out infinite alternate;}
+			@keyframes change {
+				0% {color: blue;}
+				25% {color: pink;}
+				50% {color: yellow;}
+				75% {color: green;}
+				100% {color: black;}
+			}
 		</style>
-	</head0
+	</head>
 	<body>
 		<div id="wrap">
-			<div id="lsm">
-				<div id="logo">로고</div>
-				<div id="search">검색창</div>
-				<div id="menu">Menu</div>
+			<div id="header">
+				<h1><span class="change">After New Order...</span></h1>
 			</div>
-			<div id="picture1">사진1</div>
-			<div id="picture234">
-				<div id="picture2">사진2</div>
-				<div id="picture3">사진3</div>
-				<div id="picture4">사진4</div>
+			<hr/>
+
+			<div id="container">
+				<section class="script">
+					<p>새로운 질서 그 후...(After New Order...)는 기예림, 남선미, 윤충근, 이소현, 이지수가 현대인을 위한 교양 강좌 ‘새로운질서’를 수강한 뒤 2020년 8월 결성한 실천적 공동체이다. 교육, 조형예술, 영상, 문학, 디자인 등 서로 다른 배경을 가진 이들은 웹의 정신과 가치를 중심으로 프론트엔드(Front-end) 언어의 시적 가능성을 탐구 하고자 한다.<br/><br/>
+					이러한 탐구의 실천으로 각 개인은 <button>〈상상의학교 (kiyel.care/pensee_sauvage)〉</button>, <button>〈FIND NEMO (web-book.neocities.org)〉</button>, <button>〈아무 (amu.kr)〉</button>, <button>〈퍼펙트인포 (perfect-info.neocities.org)〉</button>, <button>〈웹사이트사이트(websitesite.kr)〉</button>를<br/> 제작했고, 2020 년 12 월에는 공동 작업인 <button>〈젖과 꿀 Milk and Honey (milkandhoney.neocities.org)〉</button>을 기획해 웹사이트 개발 과정을 실시간으로 중계하는 해커톤을 진행했다.</p>
+				</section>
+
+				<section class="picture">
+					<img src="images/logo.jpeg" alt="모임 '새로운 질서 그 후..." 로고. 한글로 '후...'라고 적혀있다.>
+				</section>				
 			</div>
-			<div class="clear"></div>
+
+			<div id="footer">
+				<marquee scrollAmount="10"><font color="rgb(255.255.255)"><font size="3"> After New Order...</font></marquee>
+			</div>
 		</div>
 
-		<!-- <div id="wrap2">
-			<div id="lsm">
-				<div id="logo"></div>
-				<div id="search"></div>
-				<div id="menu"></div>
-			</div>
-			<div id="picture1"></div>
-			<div id="picture234">
-				<div id="picture2"></div>
-				<div id="picture3"></div>
-				<div id="picture4"></div>
-			</div> -->
-		</div> 
 	</body>
 </html>
